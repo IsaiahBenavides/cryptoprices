@@ -49,5 +49,5 @@ export default function Price(props) {
   }
 
   // if coin has data, run the loaded function, otherwise, run loading
-  return coin && coin.rate ? loaded : loading
+  return coin && coin.rate ? loaded() : loading()
 };
